@@ -1,0 +1,60 @@
+0 verbose cli [
+0 verbose cli   '/opt/conda/bin/node',
+0 verbose cli   '/opt/conda/bin/npm',
+0 verbose cli   'pack',
+0 verbose cli   '@jupyterlab/server-proxy'
+0 verbose cli ]
+1 info using npm@8.5.5
+2 info using node@v17.9.0
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 3ms
+5 timing config:load:file:/opt/conda/lib/node_modules/npm/npmrc Completed in 6ms
+6 timing config:load:builtin Completed in 6ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:/tmp/tmpiu1xtfhi/.npmrc Completed in 1ms
+10 timing config:load:project Completed in 6ms
+11 timing config:load:file:/home/jovyan/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 1ms
+13 timing config:load:file:/opt/conda/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:validate Completed in 0ms
+16 timing config:load:credentials Completed in 33ms
+17 timing config:load:setEnvs Completed in 1ms
+18 timing config:load Completed in 54ms
+19 timing npm:load:configload Completed in 54ms
+20 timing npm:load:setTitle Completed in 1ms
+21 timing config:load:flatten Completed in 5ms
+22 timing npm:load:display Completed in 6ms
+23 verbose logfile /home/jovyan/.npm/_logs/2022-09-19T19_27_36_719Z-debug-0.log
+24 timing npm:load:logFile Completed in 29ms
+25 timing npm:load:timers Completed in 0ms
+26 timing npm:load:configScope Completed in 0ms
+27 timing npm:load Completed in 91ms
+28 http fetch GET 200 https://registry.npmjs.org/@jupyterlab%2fserver-proxy 372ms (cache miss)
+29 http fetch GET 200 https://registry.npmjs.org/@jupyterlab%2fserver-proxy 14ms (cache hit)
+30 silly tarball no local data for https://registry.npmjs.org/@jupyterlab/server-proxy/-/server-proxy-3.2.2.tgz. Extracting by manifest.
+31 http fetch GET 200 https://registry.npmjs.org/@jupyterlab/server-proxy/-/server-proxy-3.2.2.tgz 154ms (cache miss)
+32 notice
+33 notice 📦  @jupyterlab/server-proxy@3.2.2
+34 notice === Tarball Contents ===
+35 notice 469B  README.md     
+35 notice 0B    lib           
+35 notice 219B  lib/index.d.ts
+35 notice 4.9kB lib/index.js  
+35 notice 0B    package       
+35 notice 2.0kB package.json  
+36 notice === Tarball Details ===
+37 notice name:          @jupyterlab/server-proxy                
+37 notice version:       3.2.2                                   
+37 notice filename:      @jupyterlab/server-proxy-3.2.2.tgz      
+37 notice package size:  2.6 kB                                  
+37 notice unpacked size: 7.6 kB                                  
+37 notice shasum:        39ab6a8581422f874842d20af02dfa30e97fbed8
+37 notice integrity:     sha512-Z1SsN9XA1mLOI[...]kDEPizGFIVldw==
+37 notice total files:   6                                       
+38 notice
+39 timing command:pack Completed in 579ms
+40 verbose exit 0
+41 timing npm Completed in 1200ms
+42 info ok

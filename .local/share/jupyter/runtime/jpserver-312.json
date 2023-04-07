@@ -1,0 +1,13 @@
+{
+  "base_url": "/mth420x010/user/munkr/",
+  "hostname": "0.0.0.0",
+  "password": false,
+  "pid": 312,
+  "port": 8888,
+  "root_dir": "/home",
+  "secure": false,
+  "sock": "",
+  "token": "",
+  "url": "http://mth420x010:8888/mth420x010/user/munkr/",
+  "version": "1.18.1"
+}

@@ -1,0 +1,76 @@
+0 verbose cli [
+0 verbose cli   '/opt/conda/bin/node',
+0 verbose cli   '/opt/conda/bin/npm',
+0 verbose cli   'pack',
+0 verbose cli   '@jupyter-widgets/jupyterlab-manager'
+0 verbose cli ]
+1 info using npm@8.5.5
+2 info using node@v17.9.0
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 3ms
+5 timing config:load:file:/opt/conda/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 2ms
+7 timing config:load:cli Completed in 1ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:/tmp/tmp_zks5fdd/.npmrc Completed in 0ms
+10 timing config:load:project Completed in 11ms
+11 timing config:load:file:/home/jovyan/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:/opt/conda/etc/npmrc Completed in 1ms
+14 timing config:load:global Completed in 1ms
+15 timing config:load:validate Completed in 0ms
+16 timing config:load:credentials Completed in 2ms
+17 timing config:load:setEnvs Completed in 1ms
+18 timing config:load Completed in 23ms
+19 timing npm:load:configload Completed in 23ms
+20 timing npm:load:setTitle Completed in 1ms
+21 timing config:load:flatten Completed in 5ms
+22 timing npm:load:display Completed in 6ms
+23 verbose logfile /home/jovyan/.npm/_logs/2022-09-19T18_45_25_918Z-debug-0.log
+24 timing npm:load:logFile Completed in 17ms
+25 timing npm:load:timers Completed in 0ms
+26 timing npm:load:configScope Completed in 0ms
+27 timing npm:load Completed in 48ms
+28 http fetch GET 200 https://registry.npmjs.org/npm 158ms (cache miss)
+29 http fetch GET 200 https://registry.npmjs.org/@jupyter-widgets%2fjupyterlab-manager 332ms (cache miss)
+30 http fetch GET 200 https://registry.npmjs.org/@jupyter-widgets%2fjupyterlab-manager 15ms (cache hit)
+31 silly tarball no local data for https://registry.npmjs.org/@jupyter-widgets/jupyterlab-manager/-/jupyterlab-manager-5.0.3.tgz. Extracting by manifest.
+32 http fetch GET 200 https://registry.npmjs.org/@jupyter-widgets/jupyterlab-manager/-/jupyterlab-manager-5.0.3.tgz 173ms (cache miss)
+33 notice
+34 notice 📦  @jupyter-widgets/jupyterlab-manager@5.0.3
+35 notice === Tarball Contents ===
+36 notice 13.8kB LICENSE             
+36 notice 2.8kB  README.md           
+36 notice 352B   lib/index.d.ts      
+36 notice 420B   lib/index.js        
+36 notice 6.6kB  lib/manager.d.ts    
+36 notice 14.5kB lib/manager.js      
+36 notice 1.4kB  lib/output.d.ts     
+36 notice 4.6kB  lib/output.js       
+36 notice 1.4kB  lib/plugin.d.ts     
+36 notice 9.6kB  lib/plugin.js       
+36 notice 845B   lib/renderer.d.ts   
+36 notice 3.1kB  lib/renderer.js     
+36 notice 322B   lib/semvercache.d.ts
+36 notice 1.0kB  lib/semvercache.js  
+36 notice 3.3kB  package.json        
+36 notice 375B   schema/plugin.json  
+37 notice === Tarball Details ===
+38 notice name:          @jupyter-widgets/jupyterlab-manager          
+38 notice version:       5.0.3                                        
+38 notice filename:      @jupyter-widgets/jupyterlab-manager-5.0.3.tgz
+38 notice package size:  15.2 kB                                      
+38 notice unpacked size: 64.6 kB                                      
+38 notice shasum:        4cf40672f86ce018d7074b148c35b15dea6876c4     
+38 notice integrity:     sha512-TQV8FhAvtaOk9[...]u2KvRQbHe/mVA==     
+38 notice total files:   16                                           
+39 notice
+40 timing command:pack Completed in 563ms
+41 notice
+41 notice New minor version of npm available! 8.5.5 -> 8.19.2
+41 notice Changelog: <https://github.com/npm/cli/releases/tag/v8.19.2>
+41 notice Run `npm install -g npm@8.19.2` to update!
+41 notice
+42 verbose exit 0
+43 timing npm Completed in 855ms
+44 info ok
