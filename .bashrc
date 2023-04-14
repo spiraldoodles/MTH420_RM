@@ -118,3 +118,4 @@ fi
 source /home/.hub_local/autosourced_by_bashrcs
 source /home/.hub_local/autosourced_by_bashrcs
 source /home/.hub_local/autosourced_by_bashrcs
+source /home/.hub_local/autosourced_by_bashrcs

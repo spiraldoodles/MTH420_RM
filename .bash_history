@@ -45,3 +45,51 @@ git init
 git remote add origin git@github.com:spiraldoodles/MTH420_RM.git
 git branch -M main
 git push origin main
+git add --all
+git commit -m "initial commit"
+git branch -M main
+git push origin main
+git init
+git config --local user.name spiraldoodles
+git remote add origin git@github.com:spiraldoodles/MTH420_RM.git
+git add --all
+git commit -m "initial commit"
+git branch -M main
+git push origin main
+clip < ~/.ssh/id_ed25519.pub
+ssh -vT git@github.com
+git push origin main
+git branch -M main
+git push origin main
+ssh-keygen -t ed25519 -C "munkr@oregonstate.edu"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub
+git init
+git config --local user.name spiraldoodles
+git remote add origin git@github.com:spiraldoodles/MTH420_RM.git
+git add --all
+git branch -M main
+git commit -m "initial commit"
+git branch -M main
+git push origin main
+pwd
+ls
+cd PythonEssentials
+pwd
+ls
+python python_intro.py
+cd PythonIntro
+python python_intro.py
+list_ops() list_ops()
+python python_intro.py
+ls
+cd
+cd ~/PythonEssentials
+git pull origin main
+git add -u
+git commit -m "Completed Lab 1"
+git push origin main
+ls
+cd StandardLibrary
+python standard_library.py
