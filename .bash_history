@@ -93,3 +93,14 @@ git push origin main
 ls
 cd StandardLibrary
 python standard_library.py
+cd ~/PythonEssentials
+git pull origin main
+standard_library.py
+python standard_library.py
+cd StandardLibrary
+python standard_library.py
+ipython
+python standard_library.py
+git add -u
+git commit -m "finished doing lab 2"
+git push origin main
