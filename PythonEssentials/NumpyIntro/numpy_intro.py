@@ -85,7 +85,7 @@ def prob6(A):
     """
     sums=A.sum(axis=1)
     sums=np.vstack(sums)
-    print(sums)
+    # print(sums)
     A=A/sums
     return A
     
