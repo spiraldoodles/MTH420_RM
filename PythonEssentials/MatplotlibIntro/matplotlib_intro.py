@@ -21,7 +21,7 @@ def var_of_means(n):
     """
     A= np.random.normal(size=(n,n))
     Ameans= np.mean(A, axis=0)
-    Avars= np.var(A, axis=0)
+    Avars= np.var(Ameans, axis=0)
     return Avars
         
 
@@ -29,11 +29,11 @@ def prob1():
     """ Create an array of the results of var_of_means() with inputs
     n = 100, 200, ..., 1000. Plot and show the resulting array.
     """
-
-    for n in np.linspace(100,1000, 100, dtype=int):
-        V=np.array(var_of_means(n))
-        plt.figure()
-        plt.plot(V)
+    ns= np.arange(100,1001,100)
+    V=np.zeros(len(ns))
+    for index in range(len(ns)):
+        V[index]=var_of_means(ns[index])
+    plt.plot(ns,V)
 
 # Problem 2
 def prob2():
@@ -145,11 +145,11 @@ def prob6():
     plt.contour(X, Y, Z, cmap="coolwarm", levels=10)
     plt.colorbar()
 
-# if __name__ == "__main__":
-#     prob1()
-#     prob2()
-#     prob3()
-#     prob4()
-#     prob6()
+if __name__ == "__main__":
+    prob1()
+    prob2()
+    prob3()
+    prob4()
+    prob6()
 
 plt.show()
