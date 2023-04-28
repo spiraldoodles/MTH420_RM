@@ -104,3 +104,26 @@ python standard_library.py
 git add -u
 git commit -m "finished doing lab 2"
 git push origin main
+cd ~/PythonEssentials
+git pull origin main
+python numpy_intro.py
+cd NumpyIntro
+python numpy_intro.py
+np.dot(np.dot(A, B), A, dtype=np.int64)
+python numpy_intro.py
+np.identity(3)
+python numpy_intro.py
+git add -u
+git commit -m "completed lab 3"
+git push origin main
+git add -u
+git commit -m "completed lab 3"
+git push origin main
+cd ~/PythonEssentials
+git pull origin main
+matplotlib_intro.py
+cd MatplotlibIntro
+python matplotlib_intro.py
+ipython
+python matplotlib_intro.py
+python matplotlib_intro.py
