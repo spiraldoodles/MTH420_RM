@@ -127,3 +127,27 @@ python matplotlib_intro.py
 ipython
 python matplotlib_intro.py
 python matplotlib_intro.py
+%matplotlib inline
+ipython
+python matplotlib_intro.py
+matplotlib.pyplot.close() aa
+git add -u
+git commit -m "code written for lab 4, can't figure out where ploits are displayed?"
+git push origin main
+%matplotlib inline
+ipython
+ipython
+python matplotlib_intro.py
+git add -u
+git commit -m
+git commit -m"Fixed some stuff"
+git push origin main
+cd PythonEssentials
+cd MatplotlibIntro
+python matplotlib_intro.py
+ipython
+python matplotlib_intro.py
+ipython
+cd PythonEssentials
+cd PythonIntro
+python python_intro.py

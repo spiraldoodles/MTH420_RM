@@ -106,7 +106,6 @@ def prob4():
     plt.suptitle("Have some plots, take two they're small.")
 
 
-
 # # Problem 5
 # def prob5():
 #     """ Visualize the data in FARS.npy. Use np.load() to load the data, then
@@ -145,11 +144,11 @@ def prob6():
     plt.contour(X, Y, Z, cmap="coolwarm", levels=10)
     plt.colorbar()
 
-if __name__ == "__main__":
-    prob1()
-    prob2()
-    prob3()
-    prob4()
-    prob6()
+    
+prob1()
+prob2()
+prob3()
+prob4()
+prob6()    
 
 plt.show()
