@@ -16,10 +16,10 @@ def sphere_volume(r):
     Use 3.14159 for pi in your computation.
     """
     pi =  3.14159
-    return pi*r**2
+    return 4/3*pi*r**3
 if __name__ == "__main__":
-    print(str(sphere_volume(2)))
-
+    print(str(sphere_volume(5)))
+# this is area, not volume
 
 
 # Problem 3
@@ -40,9 +40,9 @@ def first_half(my_string):
     middle character if there are an odd number of characters.
     """
     if len(my_string)/2==0:
-        return my_string[:int(len(my_string)/2)+1]
+        return my_string[:int(len(my_string)/2)]
     else:
-        return my_string[:int((len(my_string)-1)/2)+1]
+        return my_string[:int((len(my_string)-1)/2)]
         
 def backward(my_string):
     """ Return the reverse of the string 'my_string'.
@@ -50,9 +50,9 @@ def backward(my_string):
     return my_string[-1::-1]
     
 if __name__ == "__main__":
-    print(first_half("yuck"))
-    print(first_half("yyuck"))
-    print(backward("yuck"))
+    print(first_half("abcde"))
+    print(first_half("TK421"))
+    print(backward("abcd"))
 
 # Problem 5
 def list_ops():
@@ -103,10 +103,11 @@ def palindrome():
     of two 3-digit numbers.
     """
     pal=0
-    for i, j in zip(range(0,1000, 1), range(0, 1000, 1)):
-        if i*j>pal:
-            if str(i*j)==str(i*j)[-1::-1]:
-                pal=i*j
+    for i in range(0,1000, 1):
+        for j in range(0, 1000, 1):
+            if i*j>=pal:
+                if str(i*j)==str(i*j)[-1::-1]:
+                    pal=i*j
     return pal
 if __name__ == "__main__":
     print(palindrome())
@@ -116,7 +117,7 @@ def alt_harmonic(n):
     """ Return the partial sum of the first n terms of the alternating
     harmonic series, which approximates ln(2).
     """
-    list= [float((-1)**(i+1)/i) for i in range(1,n)]
+    list= [float((-1)**(i+1)/i) for i in range(1,n+1)]
     total =sum(list)
     return total
 if __name__ == "__main__":
