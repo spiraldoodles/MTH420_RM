@@ -151,3 +151,17 @@ ipython
 cd PythonEssentials
 cd PythonIntro
 python python_intro.py
+cd PythonEssentials
+cd PythonIntro
+python python_intro.py
+git add -u
+git commit -m "fixed lab one problems 2, 4, 7, 8"
+git push origin main
+cd PythonEssentials~
+ls
+cd Python Essentials
+cd PythonEssentials
+git pull origin main
+git add -u
+git commit -m "explain your changes, such as: lab1 problem2"
+git push origin main
