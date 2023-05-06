@@ -28,7 +28,7 @@ def least_squares(A, b):
         x ((n, ) ndarray): The solution to the normal equations.
     """
     Q, R = la.qr(A, mode='economic')
-    x=la.solve_triangular(R,np.transpose(Q)*b)
+    x=la.solve_triangular(R,np.matmul(np.transpose(Q), b))
     return x
     
 
@@ -38,28 +38,64 @@ def line_fit():
     index for the data in housing.npy. Plot both the data points and the least
     squares line.
     """
-    raise NotImplementedError("Problem 2 Incomplete")
-
-
+    data=np.load('housing.npy')
+    x=np.zeros((33,1))
+    y=np.zeros((33,1))
+    for row in range(len(data)):
+        xval, yval=np.split(data[row],2)
+        x[row]=xval
+        y[row]=yval
+    plt.scatter(x,y)
+    A=np.hstack((x,np.ones((len(data[:,0]),1))))
+    b=y
+    x_hat=least_squares(A, b)
+    plt.plot(x, x_hat[0]*x+x_hat[1])
+    plt.show()
+    
 # Problem 3
 def polynomial_fit():
     """Find the least squares polynomials of degree 3, 6, 9, and 12 that relate
     the year to the housing price index for the data in housing.npy. Plot both
     the data points and the least squares polynomials in individual subplots.
     """
-    raise NotImplementedError("Problem 3 Incomplete")
+    plt.figure()
+    data=np.load('housing.npy')
+    x=np.zeros((33,1))
+    y=np.zeros((33,1))
+    for row in range(len(data)):
+        xval, yval=np.split(data[row],2)
+        x[row]=xval
+        y[row]=yval
+    plt.scatter(x,y)
+    ones=np.ones((len(data[:,0]),1))
+    b=y
+    #Deg 3
+    A3=np.hstack((x**3,x**2,x,ones))
+    x3=la.lstsq(A3, b)[0]
+    print(A3)
+    print(x3)
+    plt.plot(x, x3[0]*x**3+x3[1]*x**2+x3[2]*x+x3[3])
+    #Deg 6
+    A6=np.hstack((x**6,x**5,x**4,x**3,x**2,x,ones))
+    x6=la.lstsq(A6, b)[0]
+    plt.plot(x, x6[0]*x**6+x6[1]*x**5+x6[2]*x**4+x6[3]*x**3+x6[4]*x**2+x6[5]*x+x6[6])
+    # #Deg 9
+    A9=np.hstack((x**9,x**8,x**7,x**6,x**5,x**4,x**3,x**2,x,ones))
+    x9=la.lstsq(A9, b)[0]
+    plt.plot(x, x9[0]*x**9+x9[1]*x**8+x9[2]*x**7+x9[3]*x**6+x9[4]*x**5+x9[5]*x**4+x9[6]*x**3+x9[7]*x**2+x9[8]*x+x9[9])
 
 
-def plot_ellipse(a, b, c, d, e):
-    """Plot an ellipse of the form ax^2 + bx + cxy + dy + ey^2 = 1."""
-    theta = np.linspace(0, 2*np.pi, 200)
-    cos_t, sin_t = np.cos(theta), np.sin(theta)
-    A = a*(cos_t**2) + c*cos_t*sin_t + e*(sin_t**2)
-    B = b*cos_t + d*sin_t
-    r = (-B + np.sqrt(B**2 + 4*A)) / (2*A)
 
-    plt.plot(r*cos_t, r*sin_t)
-    plt.gca().set_aspect("equal", "datalim")
+# def plot_ellipse(a, b, c, d, e):
+#     """Plot an ellipse of the form ax^2 + bx + cxy + dy + ey^2 = 1."""
+#     theta = np.linspace(0, 2*np.pi, 200)
+#     cos_t, sin_t = np.cos(theta), np.sin(theta)
+#     A = a*(cos_t**2) + c*cos_t*sin_t + e*(sin_t**2)
+#     B = b*cos_t + d*sin_t
+#     r = (-B + np.sqrt(B**2 + 4*A)) / (2*A)
+
+#     plt.plot(r*cos_t, r*sin_t)
+#     plt.gca().set_aspect("equal", "datalim")
 
 # # Problem 4
 # def ellipse_fit():
@@ -102,3 +138,8 @@ def plot_ellipse(a, b, c, d, e):
 #         ((n,) ndarray): The eigenvalues of A.
 #     """
 #     raise NotImplementedError("Problem 6 Incomplete")
+
+if __name__ == "__main__":
+    print(least_squares(np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]),np.array([[1], [2], [3]])))
+    line_fit()
+    polynomial_fit()

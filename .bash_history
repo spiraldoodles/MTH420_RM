@@ -165,3 +165,40 @@ git pull origin main
 git add -u
 git commit -m "explain your changes, such as: lab1 problem2"
 git push origin main
+cd ~/PythonEssentials
+git pull origin main
+git config pull.rebase false
+git status
+git pull origin main
+git status
+git add -u
+git status
+git commit -m "AAAAA"
+git push origin main
+git status
+git add StandardLibrary/calculator.py
+git commit -m "yeah"
+git push origin main
+git status
+ls
+cd ..
+ls
+rm *.zip
+rm -rf Volume1
+rm -rf Volume2
+rm eval\ \"\$\(ssh-agent\ -s\)\"*
+ls
+rm -rf PythonIntro
+rm -rf StandardLibrary
+rm README.md
+cd PythonEssentials
+mv * ..
+ls
+ls -la
+cd ..
+ls
+git status
+git add -all
+git add --all
+git commit
+git push origin main
