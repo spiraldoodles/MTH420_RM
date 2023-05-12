@@ -1,0 +1,6 @@
+05/11/23 19:24
+
+IndexError while loading 'matplotlib_intro.py': index 2 is out of bounds for axis 0 with size 2
+
+-------------------------------------------------------------------------------
+
