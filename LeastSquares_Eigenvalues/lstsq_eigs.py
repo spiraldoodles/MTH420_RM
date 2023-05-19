@@ -85,7 +85,6 @@ def polynomial_fit():
     plt.plot(x, x9[0]*x**9+x9[1]*x**8+x9[2]*x**7+x9[3]*x**6+x9[4]*x**5+x9[5]*x**4+x9[6]*x**3+x9[7]*x**2+x9[8]*x+x9[9])
 
 
-
 # def plot_ellipse(a, b, c, d, e):
 #     """Plot an ellipse of the form ax^2 + bx + cxy + dy + ey^2 = 1."""
 #     theta = np.linspace(0, 2*np.pi, 200)

@@ -202,3 +202,17 @@ git add -all
 git add --all
 git commit
 git push origin main
+python lstsq_eigs.py
+ls
+python lstsq_eigs.py
+git add -u
+git commit -m "Lab 5 qs 1-3"
+git push origin main
+git init
+cd ~/PythonEssentials
+git pull origin main
+cd ..
+git pull origin main
+cd ..
+cd ~/PythonEssentials
+git pull origin main
