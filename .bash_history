@@ -216,3 +216,10 @@ git pull origin main
 cd ..
 cd ~/PythonEssentials
 git pull origin main
+cd ~/PythonEssentials
+git pull origin main
+git commit -m "lab 6 probs 1-2"
+git push origin main
+git add -u
+git commit -m "lab 6 probs 1-2"
+git push origin main

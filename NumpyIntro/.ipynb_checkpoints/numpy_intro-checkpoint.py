@@ -28,8 +28,9 @@ def prob3():
     A=np.triu(A)
     Bl=-1*np.ones((7, 7))
     Bu=np.full((7, 7), 5)
-    B=np.triu(Bu)+np.tril(Bl)
-    Prod=np.dot(np.dot(A, B), A)
+    B=np.triu(Bu,1)+np.tril(Bl)
+    print(B)
+    Prod=np.matmul(np.matmul(A, B), A)
     return np.int64(Prod)
     
     

@@ -101,7 +101,7 @@ def power_set(A):
             L.append(element)
         
     L.append(A)
-    L.append(set())
+    L.append(set(A))
     return L
 
 
