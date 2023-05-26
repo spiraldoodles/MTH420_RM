@@ -46,3 +46,28 @@ Total score: 43/50 = 86.0%
 
 -------------------------------------------------------------------------------
 
+05/26/23 18:37
+
+Problem 1 (5 points):
+Score += 5
+
+Problem 2 (5 points):
+Score += 5
+
+Problem 3 (10 points):
+Score += 10
+
+Problem 4 (10 points):
+	power_set(A) does not contain set() (the empty set)
+	power_set(A) does not contain set() (the empty set)
+	power_set(A) does not contain set() (the empty set)
+	power_set(A) does not contain set() (the empty set)
+Score += 0
+
+Code Quality (20 points):
+Score += 20
+
+Total score: 40/50 = 80.0%
+
+-------------------------------------------------------------------------------
+
