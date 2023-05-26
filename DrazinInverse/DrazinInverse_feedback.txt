@@ -1,0 +1,6 @@
+05/26/23 18:46
+
+TypeError while loading 'drazin.py': _vhstack_dispatcher() takes 1 positional argument but 2 were given
+
+-------------------------------------------------------------------------------
+
