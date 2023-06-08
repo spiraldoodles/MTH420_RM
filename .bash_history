@@ -223,3 +223,22 @@ git push origin main
 git add -u
 git commit -m "lab 6 probs 1-2"
 git push origin main
+cd ~/PythonEssentials
+git pull origin main
+cd . .
+cd ..
+cd NumpyIntro
+python numpy_intro.py
+cd ..
+cd MatplotlibIntro
+python matplotlib_intro.py
+cd ..
+git add -u
+git commit -m "fixed some stuff, need help w/lab 4 fix"
+git push origin main
+pip install cvxpy
+cd ~/PythonEssentials
+git pull origin main
+cd CVXPY_Intro
+python cvxy_intro.py
+python cvxpy_intro.py
