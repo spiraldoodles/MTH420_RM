@@ -242,3 +242,8 @@ git pull origin main
 cd CVXPY_Intro
 python cvxy_intro.py
 python cvxpy_intro.py
+cd ~/PythonEssentials
+git pull origin main
+git add -u
+git commit -m "forgot to upload 8 oops"
+git push origin main
