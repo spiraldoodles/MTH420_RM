@@ -85,3 +85,33 @@ Total score: 40/50 = 80.0%
 
 -------------------------------------------------------------------------------
 
+06/20/23 20:52
+
+Problem 1 (5 points):
+Score += 5
+
+Problem 2 (5 points):
+Score += 5
+
+Problem 3 (5 points):
+NotImplementedError: Problem 3 Incomplete
+
+Problem 4 (5 points):
+Incorrect optimizer
+	Correct response: [-1.5  1.  -0.5]
+	Student response: [-1.167  0.667 -0.167]
+Incorrect optimial value
+	Correct response: -2.5000000000000004
+	Student response: -1.8333333333333333
+Score += 0
+
+Problem 5 (10 points):
+Score += 10
+
+Code Quality (20 points):
+Score += 20
+
+Total score: 40/50 = 80.0%
+
+-------------------------------------------------------------------------------
+
